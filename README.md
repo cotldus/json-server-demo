@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Json-server-demo
+
+This repo was created to demo json-server, for more information, please visit https://github.com/typicode/json-server
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
