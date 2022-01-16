@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Json-server sample",
+		"_postman_id": "73dc1fa2-dc26-846c-0957-0d9ef761b95a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"url": "http://localhost:3001/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": 2, \"title\": \"json-test\", \"author\": \"stephanie\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read all objects",
+			"request": {
+				"url": "http://localhost:3001/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get object by id",
+			"request": {
+				"url": "http://localhost:3001/posts/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update object by id",
+			"request": {
+				"url": "http://localhost:3001/posts/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": 2, \"title\": \"json-test\", \"author\": \"stephanie chua\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete object by id",
+			"request": {
+				"url": "http://localhost:3001/posts/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
